@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    /* background: url(img/pawel-czerwinski-FAlYVtV1kRg-unsplash.jpg); */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/pawel-czerwinski-FAlYVtV1kRg-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    font-family: "Courier Prime", serif;
+    /* animation: change 20s infinite ease; */
+    animation: changeBackground 15s infinite alternate-reverse ease-in-out;
+    overflow: hidden;
+}
+.stopwatch{
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, );
+    backdrop-filter: blur(5px);
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    margin: 200px auto 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.stopwatch h1{
+    margin-top:60px ;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons img{
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.buttons img:nth-child(2){
+    width:80px ;
+}
+h1::selection{
+    background-color: rgb(255, 81, 0);
+}
+
+/* @keyframes morph{
+    0%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/pawel-czerwinski-FAlYVtV1kRg-unsplash.jpg) ;
+        background-size: cover;
+    }
+    40%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/christoph-keil-KTKvnZ42QQE-unsplash.jpg) ;
+        background-size: cover;
+    }
+
+    80%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/ahmad-dirini-F7Sive0fwIg-unsplash.jpg) ;
+        background-size: cover;
+    }
+    100%{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpg) ; 
+        background-size: cover;
+
+    }
+} */
+
+@keyframes changeBackground {
+    0% {
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/pawel-czerwinski-FAlYVtV1kRg-unsplash.jpg);
+    }
+    50% {
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/ahmad-dirini-F7Sive0fwIg-unsplash.jpg) ;
+    }
+    100% {
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/alex-perez-ioJBsYQ-pPM-unsplash.jpg);
+  }
+}
+
+  
